@@ -1,4 +1,4 @@
-package firebase_create_test_token
+package test_token
 
 import (
 	"bytes"
@@ -10,8 +10,8 @@ import (
 	"net/http"
 )
 
-// CreateTestToken creates a custom token for the specified UID and verifies it with the Firebase API
-func CreateTestToken(client *auth.Client, firebaseKey, uid string) (string, error) {
+// CreateFirebaseTestToken creates a custom token for the specified UID and verifies it with the Firebase API
+func CreateFirebaseTestToken(client *auth.Client, firebaseKey, uid string) (string, error) {
 	token, err := client.CustomToken(context.Background(), uid)
 
 	if err != nil {
