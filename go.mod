@@ -1,4 +1,4 @@
-module firebase-create-test-token
+module github.com/Gebes/firebase-create-test-token
 
 go 1.17
 
